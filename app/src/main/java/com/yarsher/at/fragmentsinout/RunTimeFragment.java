@@ -5,9 +5,11 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.yarsher.at.fragmentsinout.fragments.ContainerFragment;
+
 public class RunTimeFragment extends AppCompatActivity {
 
-    private static FragmentManager fragmentManager;
+    public static FragmentManager fragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,8 +23,9 @@ public class RunTimeFragment extends AppCompatActivity {
 
             fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            ContainerFragment containerFragment = new ContainerFragment();
 
-            fragmentTransaction.add(R.id.fragmentContainer, null);
+            fragmentTransaction.add(R.id.fragmentContainer, containerFragment, null);
 
             fragmentTransaction.commit();
         }
