@@ -14,4 +14,5 @@
     <string name="send">Send</string>
     <string name="your_message_will_appear_here">Your Message will Appear Here</string>
     <string name="fragment_activity_communication">Fragment Activity Communication</string>
+    <string name="your_message_here">Your Message Here</string>
 </resources>
