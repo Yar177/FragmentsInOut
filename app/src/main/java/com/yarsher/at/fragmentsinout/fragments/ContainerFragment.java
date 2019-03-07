@@ -31,6 +31,7 @@ public class ContainerFragment extends Fragment {
             public void onClick(View v) {
                 RunTimeFragment.fragmentManager.beginTransaction()
                         .replace(R.id.fragmentContainer, new FragmentOne(), null)
+                        .addToBackStack(null)
                         .commit();
             }
         });

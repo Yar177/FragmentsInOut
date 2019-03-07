@@ -8,5 +8,8 @@
     <color name="containerColor">#ff8a80</color>
     <color name="fragmentOne">#c85a54</color>
     <color name="fragmentTwo">#ffbcaf</color>
+    <color name="color1">#ff5f52</color>
+    <color name="text">#ffffff</color>
+    <color name="reset">#c62828</color>
 
 </resources>

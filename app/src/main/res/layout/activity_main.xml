@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/fragmentTwo"
+    >
 
     <Button
         android:id="@+id/xmlFragment"
@@ -16,6 +18,9 @@
         android:onClick="xmlFragmentActivity"
         android:text="@string/xml_fragment"
         android:textSize="32sp"
+        android:textColor="@color/text"
+
+        android:background="@color/color1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -24,6 +29,7 @@
     <Button
         android:id="@+id/runtimeFragment"
         android:layout_width="0dp"
+        android:background="@color/reset"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
@@ -31,6 +37,7 @@
         android:onClick="runtimeFragmentActivity"
         android:text="@string/runtime_fragment"
         android:textSize="32sp"
+        android:textColor="@color/text"
         app:layout_constraintBottom_toTopOf="@+id/xmlFragment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

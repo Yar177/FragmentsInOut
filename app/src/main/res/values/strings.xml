@@ -8,4 +8,5 @@
     <string name="get_fragment_one">Get Fragment One</string>
     <string name="fragment_2">Fragment #2</string>
     <string name="runtime_fragment">Runtime Fragment</string>
+    <string name="get_fragment_two">Get Fragment Two</string>
 </resources>

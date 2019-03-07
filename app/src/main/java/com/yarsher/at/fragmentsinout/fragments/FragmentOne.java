@@ -28,7 +28,7 @@ public class FragmentOne extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_container, container, false);
+        View view =  inflater.inflate(R.layout.fragment_fragment_one, container, false);
         button = view.findViewById(R.id.btnFragmentOne);
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -36,6 +36,7 @@ public class FragmentOne extends Fragment {
             public void onClick(View v) {
                 RunTimeFragment.fragmentManager.beginTransaction()
                         .replace(R.id.fragmentContainer, new FragmentTwo(), null)
+                        .addToBackStack(null)
                         .commit();
             }
         });
