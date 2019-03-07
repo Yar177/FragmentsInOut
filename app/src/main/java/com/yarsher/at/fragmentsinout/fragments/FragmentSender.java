@@ -14,6 +14,13 @@ import com.yarsher.at.fragmentsinout.R;
  */
 public class FragmentSender extends Fragment {
 
+    OnFragmentMassageListener onFragmentMassageListener;
+
+    interface OnFragmentMassageListener{
+        public void onMassageSent(String message);
+
+    }
+
 
     public FragmentSender() {
         // Required empty public constructor
