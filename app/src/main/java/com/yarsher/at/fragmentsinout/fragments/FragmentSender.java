@@ -1,11 +1,15 @@
 package com.yarsher.at.fragmentsinout.fragments;
 
 
+import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.yarsher.at.fragmentsinout.R;
 
@@ -15,12 +19,12 @@ import com.yarsher.at.fragmentsinout.R;
 public class FragmentSender extends Fragment {
 
     OnFragmentMassageListener onFragmentMassageListener;
+    Button button;
+    EditText editText;
 
-    interface OnFragmentMassageListener{
+    public interface OnFragmentMassageListener{
         public void onMassageSent(String message);
-
     }
-
 
     public FragmentSender() {
         // Required empty public constructor
@@ -31,7 +35,32 @@ public class FragmentSender extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fragment_sender, container, false);
+        View view =  inflater.inflate(R.layout.fragment_fragment_sender, container, false);
+        editText = view.findViewById(R.id.tvMessageFromFragment);
+        button = view.findViewById(R.id.btnFragmentMessageSend);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String message = editText.getText().toString();
+                onFragmentMassageListener.onMassageSent(message);
+
+            }
+        });
+
+        return view;
     }
 
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        Activity activity = (Activity) context;
+        try {
+            onFragmentMassageListener = (OnFragmentMassageListener) activity;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+    }
 }
