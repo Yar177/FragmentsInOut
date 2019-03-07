@@ -15,7 +15,7 @@
         android:id="@+id/topFragment"
         android:layout_weight="1"
         android:layout_margin="4dp"
-        android:name="com.yarsher.at.fragmentsinout.TopFragment"
+        android:name="com.yarsher.at.fragmentsinout.fragments.TopFragment"
 
         />
 
@@ -26,7 +26,7 @@
         android:layout_margin="4dp"
 
         android:layout_weight="2"
-        android:name="com.yarsher.at.fragmentsinout.ContentFragment"
+        android:name="com.yarsher.at.fragmentsinout.fragments.ContentFragment"
         />
 
 

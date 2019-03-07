@@ -1,4 +1,4 @@
-package com.yarsher.at.fragmentsinout;
+package com.yarsher.at.fragmentsinout.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,6 +8,8 @@ import android.text.style.TtsSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.yarsher.at.fragmentsinout.R;
 
 public class TopFragment extends Fragment {
     @Nullable
