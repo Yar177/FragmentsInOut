@@ -9,4 +9,5 @@
     <string name="fragment_2">Fragment #2</string>
     <string name="runtime_fragment">Runtime Fragment</string>
     <string name="get_fragment_two">Get Fragment Two</string>
+    <string name="content_fragment">Content Fragment</string>
 </resources>
