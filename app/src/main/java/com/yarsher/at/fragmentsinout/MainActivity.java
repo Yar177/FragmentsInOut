@@ -16,13 +16,13 @@ public class MainActivity extends AppCompatActivity {
     public void xmlFragmentActivity(View view) {
         Intent intent = new Intent(this, XmlFragment.class);
         startActivity(intent);
-
     }
 
     public void runtimeFragmentActivity(View view) {
         Intent intent = new Intent(this, RunTimeFragment.class);
         startActivity(intent);
     }
+
 
 
     public void fragmentActivityCommunication(View view) {
