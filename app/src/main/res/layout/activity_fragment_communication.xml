@@ -26,18 +26,30 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/your_message_will_appear_here"
-            android:gravity="center"
-            android:textSize="24sp"
-            android:textColor="@color/text"
-            android:textStyle="bold"
-            android:id="@+id/tv_message_display"
-            android:layout_centerInParent="true"
 
-            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/your_message_will_appear_here"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/text"
+                android:textStyle="bold"
+                android:id="@+id/tv_message_display"
+
+
+                />
+
+        </ScrollView>
+
+
+
 
 
     </RelativeLayout>
