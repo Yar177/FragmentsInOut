@@ -4,23 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragemntFragmentCommunication"
-
-
+    tools:context=".fragments.ReceiverFragment"
+    android:background="@color/fragmentOne"
     >
 
-    <FrameLayout
-        android:id="@+id/fragmentMessageReciver"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+
+    <TextView
+        android:id="@+id/tvFragmentMessageReceiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:hint="@string/your_message_will_appear_here"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </FrameLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

@@ -29,4 +29,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, FragmentActivityCommunication.class);
         startActivity(intent);
     }
+
+    public void fragmentFragmentCommunication(View view) {
+        Intent intent = new Intent(this, FragemntFragmentCommunication.class);
+        startActivity(intent);
+    }
 }
