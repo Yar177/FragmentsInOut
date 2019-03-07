@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FragmentsInOut</string>
+    <string name="xml_fragment">XML Fragment</string>
 </resources>
