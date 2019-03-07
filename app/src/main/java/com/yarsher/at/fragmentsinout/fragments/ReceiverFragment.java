@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.yarsher.at.fragmentsinout.R;
 
@@ -13,6 +14,8 @@ import com.yarsher.at.fragmentsinout.R;
  * A simple {@link Fragment} subclass.
  */
 public class ReceiverFragment extends Fragment {
+
+    TextView textView;
 
 
     public ReceiverFragment() {
@@ -24,7 +27,15 @@ public class ReceiverFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_receiver, container, false);
+        View view = inflater.inflate(R.layout.fragment_receiver, container, false);
+
+        textView = view.findViewById(R.id.tvFragmentMessageReceiver);
+
+        Bundle bundle = getArguments();
+        String message = bundle.getString("message");
+        textView.append("\n" + message);
+
+        return view;
     }
 
 }
