@@ -10,4 +10,8 @@
     <string name="runtime_fragment">Runtime Fragment</string>
     <string name="get_fragment_two">Get Fragment Two</string>
     <string name="content_fragment">Content Fragment</string>
+    <string name="enter_your_message">Enter Your Message</string>
+    <string name="send">Send</string>
+    <string name="your_message_will_appear_here">Your Message will Appear Here</string>
+    <string name="fragment_activity_communication">Fragment Activity Communication</string>
 </resources>

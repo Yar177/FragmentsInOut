@@ -25,5 +25,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
+    public void fragmentActivityCommunication(View view) {
+        Intent intent = new Intent(this, FragmentActivityCommunication.class);
+        startActivity(intent);
+    }
 }
